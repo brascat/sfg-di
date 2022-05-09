@@ -1,5 +1,12 @@
 package guru.springframework.sfgdi.controllers;
 
-public class MyController {
+import org.springframework.stereotype.Controller;
 
+@Controller
+public class MyController {
+    public String sayHello() {
+
+        System.out.println("Hello!");
+        return "Hi folks!";
+    }
 }
