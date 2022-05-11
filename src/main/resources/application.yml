@@ -1,7 +1,17 @@
 spring:
   profiles:
-    active: dev
+    active:
+     - prod
+
 guru:
   username: ymluser
   password: ymlpassword
   jdburl: ymlurl
+
+---
+spring:
+  profiles: prod
+guru:
+  username: ymlproduser
+  password: ymlprodpassword
+  jdburl: ymlprodurl
